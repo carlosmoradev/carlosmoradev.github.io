@@ -1,0 +1,58 @@
+# Site settings
+title: Carlos Mora
+description: >-
+  Senior Platform Engineer & SRE specializing in multi-cloud automation,
+  data platform governance, and healthcare compliance
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://carlosmora.dev"
+
+# Author settings
+author:
+  name: Carlos Mora
+  email: hi@carlosmora.dev
+  github: carlosmoradev
+  linkedin: carlosmoradev
+
+# Build settings
+theme: minima # GitHub Pages compatible theme
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections for projects
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<article class="project">
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+
+    {% if page.tags %}
+    <div class="project-tags">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if page.tech_stack %}
+    <div class="tech-stack">
+      <strong>Tech Stack:</strong> {{ page.tech_stack }}
+    </div>
+    {% endif %}
+  </header>
+
+  {% if page.cover_image %}
+  <div class="project-cover">
+    <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <footer class="project-footer">
+    <a href="/projects" class="back-link">← Back to all projects</a>
+  </footer>
+</article>
