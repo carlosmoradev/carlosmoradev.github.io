@@ -241,7 +241,7 @@ Want to implement this in your organization? Here's the checklist:
 
 ---
 
-**Want to discuss cost optimization strategies?** Connect with me on [LinkedIn](https://linkedin.com/in/yourlinkedin) or check out my [other projects](/projects).
+**Want to discuss cost optimization strategies?** Connect with me on [LinkedIn](https://linkedin.com/in/carlosmoradev) or check out my [other projects](/projects).
 
 **Related reading:**
 - [Multi-Account Data Warehouse Governance](/projects/snowflake-governance)
