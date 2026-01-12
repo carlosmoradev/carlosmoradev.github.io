@@ -102,4 +102,4 @@ Most platform engineers have toy projects or single-cloud experience. I operate 
 
 ---
 
-Want to connect? Find me on [GitHub](https://github.com/yourusername), [LinkedIn](https://linkedin.com/in/yourlinkedin), or [email](mailto:your.email@example.com).
+Want to connect? Find me on [GitHub](https://github.com/carlosmoradev), [LinkedIn](https://linkedin.com/in/carlosmoradev), or [email](mailto:hi@carlosmora.dev).
