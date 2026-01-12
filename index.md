@@ -141,20 +141,43 @@ title: Home
   </header>
 
   <article class="certifications-box">
-    <h3 style="margin-top: 0;">✅ Google Cloud Professional Cloud Architect</h3>
-    <p><strong>Status:</strong> Certified</p>
-    <p>Production experience with Databricks on GCP, multi-cloud VPC design, IAM governance patterns, and data platform infrastructure.</p>
-    <p style="margin-top: 15px;">
-      <a href="https://www.credly.com/badges/21eb07dc-eebf-439a-b37b-3fd0130ff742" target="_blank" rel="noopener" style="color: var(--primary-color); font-weight: 600;">
-        View Credential →
-      </a>
-    </p>
+    <div class="cert-content">
+      <h3 style="margin-top: 0;">✅ Google Cloud Professional Cloud Architect</h3>
+      <p><strong>Status:</strong> Certified</p>
+      <p>Production experience with Databricks on GCP, multi-cloud VPC design, IAM governance patterns, and data platform infrastructure.</p>
+      <p style="margin-top: 15px;">
+        <a href="https://www.credly.com/badges/21eb07dc-eebf-439a-b37b-3fd0130ff742" target="_blank" rel="noopener" style="color: var(--primary-color); font-weight: 600;">
+          View Credential →
+        </a>
+      </p>
+    </div>
+    <div class="cert-badge">
+      <img src="/assets/images/gcp-pca-badge.png" alt="Google Cloud Professional Cloud Architect Badge">
+    </div>
   </article>
 
   <article class="certifications-box">
-    <h3 style="margin-top: 0;">🎯 AWS Solutions Architect Professional</h3>
-    <p><strong>Status:</strong> In Preparation</p>
-    <p>Hands-on production experience with multi-account architectures, hybrid cloud connectivity (RDS Proxy + NLB), IAM security automation, and cost optimization strategies across AWS and GCP.</p>
+    <div class="cert-content">
+      <h3 style="margin-top: 0;">✅ Google Cloud Associate Cloud Engineer</h3>
+      <p><strong>Status:</strong> Certified</p>
+      <p>Hands-on experience deploying applications, monitoring operations, and managing enterprise solutions on Google Cloud Platform.</p>
+      <p style="margin-top: 15px;">
+        <a href="https://www.credly.com/badges/973bb37a-19cd-4c47-9c2a-d6307da51bdd" target="_blank" rel="noopener" style="color: var(--primary-color); font-weight: 600;">
+          View Credential →
+        </a>
+      </p>
+    </div>
+    <div class="cert-badge">
+      <img src="/assets/images/gcp-cea-badge.png" alt="Google Cloud Associate Cloud Engineer Badge">
+    </div>
+  </article>
+
+  <article class="certifications-box">
+    <div class="cert-content">
+      <h3 style="margin-top: 0;">🎯 AWS Solutions Architect Professional</h3>
+      <p><strong>Status:</strong> In Preparation</p>
+      <p>Hands-on production experience with multi-account architectures, hybrid cloud connectivity (RDS Proxy + NLB), IAM security automation, and cost optimization strategies across AWS and GCP.</p>
+    </div>
   </article>
 </section>
 
