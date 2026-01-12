@@ -100,6 +100,16 @@ Most platform engineers have toy projects or single-cloud experience. I operate 
 - Multi-layer cost controls
 - Zero long-lived credentials in CI/CD
 
+## Beyond Code
+
+After 25+ years in infrastructure—from on-premise data centers to multi-cloud at scale—I've learned that sustainable performance engineering applies to systems AND people.
+
+As a neurodivergent engineer, I approach complex systems with pattern recognition that's both a strength and a responsibility. The same principles that prevent infrastructure burnout (observability, graceful degradation, capacity planning) apply to career sustainability.
+
+The tech industry often celebrates "hustle culture" and endless availability. I've learned that the engineers who last decades—who ship reliable systems consistently—treat their own capacity as seriously as they treat system capacity. Monitoring your own metrics matters as much as monitoring your infrastructure.
+
+I occasionally write about burnout prevention, neurodivergence in tech, and building careers that last decades, not just sprints.
+
 ---
 
 Want to connect? Find me on [GitHub](https://github.com/carlosmoradev), [LinkedIn](https://linkedin.com/in/carlosmoradev), or [email](mailto:hi@carlosmora.dev).
