@@ -32,7 +32,7 @@ Built a comprehensive Python automation framework for multi-account Snowflake go
 
 **Key features:**
 - Environment-based permissions (read-only in production, full access in sandbox)
-- Automated RBAC assignment (ANALYST_READONLY, DATA_ENGINEER, SANDBOX_DEVELOPER)
+- Automated RBAC assignment (USERS_READONLY, DATAOWNER, USERS_SANDBOX)
 - Dry-run by default (requires `--execute` flag for safety)
 - Admin role protection (requires `--force-admin` for ACCOUNTADMIN grants)
 
@@ -132,9 +132,9 @@ connection = snowflake.connector.connect(
 
 ```python
 ROLE_MAPPINGS = {
-    'production': ['ANALYST_READONLY'],  # Read-only in prod
-    'development': ['DATA_ENGINEER'],     # Full access in dev
-    'sandbox': ['SANDBOX_DEVELOPER']      # Experimentation in sandbox
+    'production': ['USERS_READONLY'],  # Read-only in prod
+    'development': ['DATAOWNER'],     # Full access in dev
+    'sandbox': ['USERS_SANDBOX']      # Experimentation in sandbox
 }
 ```
 
@@ -165,7 +165,7 @@ ROLE_MAPPINGS = {
 ## Key Innovation
 
 **Graceful degradation for healthcare compliance:**
-In healthcare environments, availability matters. If one Snowflake account fails (maintenance, network issue), audits continue for the other 5 accounts. Compliance teams still get 5/6 reports rather than nothing.
+In healthcare environments, availability matters. If one Snowflake account fails (maintenance, network issue), audits continue for the other accounts. Compliance teams still get 80% reports rather than nothing.
 
 **Multi-layer cost defense:**
 Rather than relying on a single cost control mechanism, the 4-layer strategy ensures that even if one layer fails (e.g., user ignores email alerts), other layers prevent runaway costs.
