@@ -191,9 +191,13 @@ body {
 /* Project Cards */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   margin-top: 40px;
+  justify-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card {
@@ -203,6 +207,8 @@ body {
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 600px;
 }
 
 .project-card:hover {
