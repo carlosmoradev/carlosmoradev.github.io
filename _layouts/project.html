@@ -22,14 +22,14 @@ layout: default
   </header>
 
   {% if page.cover_image %}
-  <div class="project-cover">
+  <figure class="project-cover">
     <img src="{{ page.cover_image | relative_url }}" alt="{{ page.title }}">
-  </div>
+  </figure>
   {% endif %}
 
-  <div class="project-content">
+  <section class="project-content">
     {{ content }}
-  </div>
+  </section>
 
   <footer class="project-footer">
     <a href="/projects" class="back-link">← Back to all projects</a>
