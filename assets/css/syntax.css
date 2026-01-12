@@ -5,12 +5,20 @@
   padding: 1rem;
   overflow-x: auto;
   margin-bottom: 1.25rem;
+  color: #1f2937;
 }
 
 .highlight pre {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  color: inherit;
+}
+
+.highlight code {
+  color: #1f2937;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
 }
 
 /* Line numbers */

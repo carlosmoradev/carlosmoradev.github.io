@@ -415,8 +415,8 @@ body {
   margin-bottom: 15px;
 }
 
-/* Code Blocks */
-pre {
+/* Code Blocks - Only for non-syntax-highlighted blocks */
+:not(.highlight) > pre {
   background-color: #2d2d2d;
   color: #f8f8f2;
   padding: 20px;
@@ -427,6 +427,7 @@ pre {
   border-left: 4px solid var(--primary-color);
 }
 
+/* Inline code */
 code {
   background-color: var(--bg-light);
   padding: 3px 8px;
@@ -437,11 +438,20 @@ code {
   border: 1px solid var(--border-color);
 }
 
-pre code {
+/* Code inside pre blocks (non-highlighted) */
+:not(.highlight) > pre code {
   background-color: transparent;
   padding: 0;
   color: #f8f8f2;
   border: none;
+}
+
+/* Code inside highlighted blocks - let syntax.css handle it */
+.highlight code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: inherit;
 }
 
 /* Tables */
