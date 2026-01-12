@@ -245,4 +245,3 @@ Want to implement this in your organization? Here's the checklist:
 
 **Related reading:**
 - [Multi-Account Data Warehouse Governance](/projects/snowflake-governance)
-- FinOps best practices for cloud data platforms (coming soon)

@@ -7,7 +7,7 @@ title: Home
   <h1>Carlos Mora</h1>
   <h2>I'm a <span>Platform Engineer & Site Reliability Engineer</span></h2>
   <p class="hero-description">
-    I build multi-cloud infrastructure that scales and automate the complex: from managing multi-account Snowflake environments across AWS and GCP to connecting clouds with Zero Trust networks. Specialized in making the complicated simple and the manual automatic.
+    Platform Engineer with 25+ years building infrastructure—from on-premise data centers to hybrid clouds to multi-cloud at scale. I specialize in the complex parts: data platform governance, Zero Trust networks, IAM automation, and compliance frameworks that work across AWS and GCP.
   </p>
 </section>
 
@@ -56,44 +56,6 @@ title: Home
         <a href="/projects/snowflake-governance" class="btn-primary">View Case Study</a>
       </div>
     </article>
-
-    <article class="project-card">
-      <header class="project-card-header">
-        <h3>Zero Trust Network Automation</h3>
-        <div class="project-tags">
-          <span class="tag">OpenTofu</span>
-          <span class="tag">AWS</span>
-          <span class="tag">GCP</span>
-        </div>
-      </header>
-      <div class="project-card-body">
-        <p>Multi-cloud VPN automation with OpenTofu. Multiple reusable modules for AWS and GCP connector deployment with intelligent DNS management.</p>
-        <div class="project-meta">
-          <strong>Impact:</strong> 80% reduction in deployment time<br>
-          <strong>Tech:</strong> OpenTofu, CloudConnexa, GitHub Actions
-        </div>
-        <a href="/projects#zero-trust" class="btn-primary">Coming Soon</a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <header class="project-card-header">
-        <h3>Multi-Cloud IAM Audit Tool</h3>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Security</span>
-          <span class="tag">Compliance</span>
-        </div>
-      </header>
-      <div class="project-card-body">
-        <p>Production security tool for auditing IAM permissions across AWS and GCP with risk-based categorization for compliance reporting.</p>
-        <div class="project-meta">
-          <strong>Impact:</strong> 70% reduction in security audit time<br>
-          <strong>Tech:</strong> Python, boto3, gcloud CLI
-        </div>
-        <a href="/projects#iam-audit" class="btn-primary">Coming Soon</a>
-      </div>
-    </article>
   </div>
 </section>
 
@@ -125,10 +87,6 @@ title: Home
 
     <p style="text-align: center; margin-top: 40px;">
       <a href="/blog" class="btn-primary">View All Posts</a>
-    </p>
-  {% else %}
-    <p style="text-align: center; color: var(--text-light);">
-      <em>Blog posts coming soon! Check back later for technical articles on multi-cloud architecture and platform engineering.</em>
     </p>
   {% endif %}
 </section>
