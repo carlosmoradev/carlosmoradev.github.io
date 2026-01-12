@@ -67,7 +67,7 @@ title: Home
         </div>
       </header>
       <div class="project-card-body">
-        <p>Multi-cloud VPN automation with OpenTofu. 5 reusable modules for AWS and GCP connector deployment with intelligent DNS management.</p>
+        <p>Multi-cloud VPN automation with OpenTofu. Multiple reusable modules for AWS and GCP connector deployment with intelligent DNS management.</p>
         <div class="project-meta">
           <strong>Impact:</strong> 80% reduction in deployment time<br>
           <strong>Tech:</strong> OpenTofu, CloudConnexa, GitHub Actions

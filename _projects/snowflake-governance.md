@@ -1,6 +1,6 @@
 ---
 title: "Multi-Account Data Warehouse Governance"
-description: "Automated governance for 6 Snowflake accounts across AWS and GCP with multi-layer cost controls and RBAC automation"
+description: "Automated governance for multiple Snowflake accounts across AWS and GCP with multi-layer cost controls and RBAC automation"
 tags: ["python", "snowflake", "multi-cloud", "automation", "healthcare"]
 tech_stack: "Python, Snowflake Connector, Pandas, TOML, Multi-cloud (AWS + GCP)"
 impact: "95% reduction in audit time, 80% connection pooling efficiency"
@@ -32,7 +32,7 @@ Built a comprehensive Python automation framework for multi-account Snowflake go
 
 **Key features:**
 - Environment-based permissions (read-only in production, full access in sandbox)
-- Automated RBAC assignment (USERS_READONLY, DATAOWNER, USERS_SANDBOX)
+- Automated RBAC assignment (READ_ONLY_ROLE, DATA_MANAGER, SANDBOX_ROLE)
 - Dry-run by default (requires `--execute` flag for safety)
 - Admin role protection (requires `--force-admin` for ACCOUNTADMIN grants)
 
@@ -66,7 +66,7 @@ Cross-account change detection with graceful degradation:
 - Monitors user additions, deletions, and role changes
 - Detects critical ACCOUNTADMIN grants
 - Continues auditing even if individual accounts fail
-- Generates consolidated reports across all 6 accounts
+- Generates consolidated reports across all accounts
 
 **Example output:**
 ```
@@ -122,7 +122,7 @@ connection = snowflake.connector.connect(
     user='SERVICE_ACCOUNT',
     account='ACCOUNT_IDENTIFIER',
     private_key=load_rsa_key('~/.ssh/snowflake_key.p8'),
-    warehouse='ADMIN_WH',
+    warehouse='ADMIN_WAREHOUSE',
     database='SNOWFLAKE',
     schema='ACCOUNT_USAGE'
 )
@@ -132,9 +132,9 @@ connection = snowflake.connector.connect(
 
 ```python
 ROLE_MAPPINGS = {
-    'production': ['USERS_READONLY'],  # Read-only in prod
-    'development': ['DATAOWNER'],     # Full access in dev
-    'sandbox': ['USERS_SANDBOX']      # Experimentation in sandbox
+    'production': ['READ_ONLY_ROLE'],  # Read-only in prod
+    'development': ['DATA_MANAGER'],     # Full access in dev
+    'sandbox': ['SANDBOX_ROLE']      # Experimentation in sandbox
 }
 ```
 
@@ -219,7 +219,7 @@ Rather than relying on a single cost control mechanism, the 4-layer strategy ens
 - **Pandas**: Data analysis and reporting
 - **TOML**: Configuration management
 - **RSA cryptography**: Secure authentication
-- **Multi-cloud**: AWS (us-east-1, us-east-2) and GCP (us-central1)
+- **Multi-cloud**: AWS and GCP regions
 
 ## Lessons Learned
 
