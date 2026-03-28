@@ -11,27 +11,6 @@ title: Home
   </p>
 </section>
 
-<section class="specialties">
-  <article class="specialty-item">
-    <strong>Multi-Cloud Infrastructure</strong>
-    <p>AWS & GCP in production environments with multi-account strategies and hybrid connectivity patterns</p>
-  </article>
-  <article class="specialty-item">
-    <strong>Data Platform Governance</strong>
-    <p>Snowflake, Databricks automation with RBAC, cost controls, and compliance built-in</p>
-  </article>
-  <article class="specialty-item">
-    <strong>Security & Compliance</strong>
-    <p>Multi-cloud IAM auditing, HIPAA/SOC2/HITRUST automation, and Zero Trust implementations</p>
-  </article>
-  <article class="specialty-item">
-    <strong>Infrastructure as Code</strong>
-    <p>OpenTofu/Terraform at scale with reusable modules, GitHub Actions OIDC, and validation frameworks</p>
-  </article>
-</section>
-
----
-
 {% assign latest = site.posts.first %}
 {% if latest %}
 <section>
@@ -62,6 +41,27 @@ title: Home
 ---
 
 {% endif %}
+<section class="specialties">
+  <article class="specialty-item">
+    <strong>Multi-Cloud Infrastructure</strong>
+    <p>AWS & GCP in production environments with multi-account strategies and hybrid connectivity patterns</p>
+  </article>
+  <article class="specialty-item">
+    <strong>Data Platform Governance</strong>
+    <p>Snowflake, Databricks automation with RBAC, cost controls, and compliance built-in</p>
+  </article>
+  <article class="specialty-item">
+    <strong>Security & Compliance</strong>
+    <p>Multi-cloud IAM auditing, HIPAA/SOC2/HITRUST automation, and Zero Trust implementations</p>
+  </article>
+  <article class="specialty-item">
+    <strong>Infrastructure as Code</strong>
+    <p>OpenTofu/Terraform at scale with reusable modules, GitHub Actions OIDC, and validation frameworks</p>
+  </article>
+</section>
+
+---
+
 <section>
   <header class="section-title">
     <h2>Featured Projects</h2>
