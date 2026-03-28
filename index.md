@@ -32,6 +32,36 @@ title: Home
 
 ---
 
+{% assign latest = site.posts.first %}
+{% if latest %}
+<section>
+  <header class="section-title">
+    <h2>Latest Post</h2>
+  </header>
+
+  <article class="post-featured">
+    <div class="post-featured-header">
+      <span class="post-featured-badge">New</span>
+      <h2><a href="{{ latest.url }}">{{ latest.title }}</a></h2>
+      <div class="post-featured-meta">
+        <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%B %d, %Y" }}</time>
+        {% if latest.tags %}
+          {% for tag in latest.tags limit:4 %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    <div class="post-featured-body">
+      <p>{{ latest.excerpt | strip_html | truncatewords: 60 }}</p>
+      <a href="{{ latest.url }}" class="btn-primary">Read post</a>
+    </div>
+  </article>
+</section>
+
+---
+
+{% endif %}
 <section>
   <header class="section-title">
     <h2>Featured Projects</h2>
