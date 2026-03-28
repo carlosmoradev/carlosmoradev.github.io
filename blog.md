@@ -5,10 +5,10 @@ permalink: /blog/
 ---
 
 <div class="section-title">
-  <h2>Technical Writing</h2>
+  <h1>Technical Writing</h1>
 </div>
 
-<p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 0 auto 60px;">
+<p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 680px; margin: 0 auto 60px;">
   Articles about multi-cloud architecture, platform engineering, SRE patterns, and lessons learned from production systems.
 </p>
 
@@ -17,7 +17,7 @@ permalink: /blog/
 <div class="post-featured">
   <div class="post-featured-header">
     <span class="post-featured-badge">Latest Post</span>
-    <h2><a href="{{ latest.url }}">{{ latest.title }}</a></h2>
+    <h3><a href="{{ latest.url }}">{{ latest.title }}</a></h3>
     <div class="post-featured-meta">
       <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%B %d, %Y" }}</time>
       {% if latest.tags %}
@@ -29,14 +29,14 @@ permalink: /blog/
   </div>
   <div class="post-featured-body">
     <p>{{ latest.excerpt | strip_html | truncatewords: 60 }}</p>
-    <a href="{{ latest.url }}" class="btn-primary">Read post</a>
+    <a href="{{ latest.url }}" class="btn-primary" aria-label="Read post: {{ latest.title }}">Read post</a>
   </div>
 </div>
 {% endif %}
 
 {% for post in site.posts offset:1 %}
 <div class="post-preview">
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 
   <div class="post-meta">
     <time datetime="{{ post.date | date_to_xmlschema }}">
@@ -57,6 +57,6 @@ permalink: /blog/
 
   <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
 
-  <a href="{{ post.url }}" class="read-more">Read more</a>
+  <a href="{{ post.url }}" class="read-more" aria-label="Read more: {{ post.title }}">Read more</a>
 </div>
 {% endfor %}

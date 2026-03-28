@@ -89,10 +89,9 @@ Most platform engineers have toy projects or single-cloud experience. I operate 
 - Healthcare compliance automation at scale
 
 **Documentation discipline:**
-- Two-layer documentation strategy (public + private learning notes)
-- 15,000+ lines of technical documentation
-- Certification prep notes with 70%+ exam coverage
-- Comprehensive decision logs and troubleshooting guides
+- Two-layer documentation strategy: public docs any engineer can operate from, private decision logs I actually use
+- Certification prep notes mapped to real exam objectives, not just topic lists
+- Comprehensive decision logs and troubleshooting guides from production incidents
 
 **Security mindset:**
 - Dry-run by default in all admin tools

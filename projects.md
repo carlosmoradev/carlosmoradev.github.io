@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="section-title">
-  <h2>Production Projects</h2>
+  <h1>Production Projects</h1>
 </div>
 
 <p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 0 auto 60px;">

@@ -5,10 +5,14 @@ title: Home
 
 <section class="hero">
   <h1>Carlos Mora</h1>
-  <h2>I'm a <span>Platform Engineer & Site Reliability Engineer</span></h2>
+  <p class="hero-subtitle">Platform Engineer & <span>Site Reliability Engineer</span></p>
   <p class="hero-description">
     Platform Engineer with 25+ years building infrastructure—from on-premise data centers to hybrid clouds to multi-cloud at scale. I specialize in the complex parts: data platform governance, Zero Trust networks, IAM automation, and compliance frameworks that work across AWS and GCP.
   </p>
+  <div class="hero-cta">
+    <a href="/projects" class="btn-primary">View my work</a>
+    <a href="/about" class="btn-secondary">About me</a>
+  </div>
 </section>
 
 {% assign latest = site.posts.first %}
@@ -21,7 +25,7 @@ title: Home
   <article class="post-featured">
     <div class="post-featured-header">
       <span class="post-featured-badge">New</span>
-      <h2><a href="{{ latest.url }}">{{ latest.title }}</a></h2>
+      <h3><a href="{{ latest.url }}">{{ latest.title }}</a></h3>
       <div class="post-featured-meta">
         <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%B %d, %Y" }}</time>
         {% if latest.tags %}
@@ -33,7 +37,7 @@ title: Home
     </div>
     <div class="post-featured-body">
       <p>{{ latest.excerpt | strip_html | truncatewords: 60 }}</p>
-      <a href="{{ latest.url }}" class="btn-primary">Read post</a>
+      <a href="{{ latest.url }}" class="btn-primary" aria-label="Read post: {{ latest.title }}">Read post</a>
     </div>
   </article>
 </section>
@@ -41,23 +45,28 @@ title: Home
 ---
 
 {% endif %}
-<section class="specialties">
-  <article class="specialty-item">
-    <strong>Multi-Cloud Infrastructure</strong>
-    <p>AWS & GCP in production environments with multi-account strategies and hybrid connectivity patterns</p>
-  </article>
-  <article class="specialty-item">
-    <strong>Data Platform Governance</strong>
-    <p>Snowflake, Databricks automation with RBAC, cost controls, and compliance built-in</p>
-  </article>
-  <article class="specialty-item">
-    <strong>Security & Compliance</strong>
-    <p>Multi-cloud IAM auditing, HIPAA/SOC2/HITRUST automation, and Zero Trust implementations</p>
-  </article>
-  <article class="specialty-item">
-    <strong>Infrastructure as Code</strong>
-    <p>OpenTofu/Terraform at scale with reusable modules, GitHub Actions OIDC, and validation frameworks</p>
-  </article>
+<section>
+  <header class="section-title">
+    <h2>Areas of Expertise</h2>
+  </header>
+  <div class="specialties">
+    <article class="specialty-item">
+      <h3>Multi-Cloud Infrastructure</h3>
+      <p>AWS & GCP in production environments with multi-account strategies and hybrid connectivity patterns</p>
+    </article>
+    <article class="specialty-item">
+      <h3>Data Platform Governance</h3>
+      <p>Snowflake, Databricks automation with RBAC, cost controls, and compliance built-in</p>
+    </article>
+    <article class="specialty-item">
+      <h3>Security & Compliance</h3>
+      <p>Multi-cloud IAM auditing, HIPAA/SOC2/HITRUST automation, and Zero Trust implementations</p>
+    </article>
+    <article class="specialty-item">
+      <h3>Infrastructure as Code</h3>
+      <p>OpenTofu/Terraform at scale with reusable modules, GitHub Actions OIDC, and validation frameworks</p>
+    </article>
+  </div>
 </section>
 
 ---
@@ -83,7 +92,7 @@ title: Home
           <strong>Impact:</strong> 95% reduction in audit time<br>
           <strong>Tech:</strong> Python, Snowflake, Pandas, Multi-cloud
         </div>
-        <a href="/projects/snowflake-governance" class="btn-primary">View Case Study</a>
+        <a href="/projects/snowflake-governance" class="btn-primary" aria-label="View case study: Multi-Account Data Warehouse Governance">View Case Study</a>
       </div>
     </article>
   </div>
@@ -99,7 +108,7 @@ title: Home
   {% if site.posts.size > 0 %}
     {% for post in site.posts limit:3 %}
     <article class="post-preview">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <div class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
         {% if post.tags %}
@@ -111,7 +120,7 @@ title: Home
         {% endif %}
       </div>
       <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-      <a href="{{ post.url }}" class="read-more">Read more</a>
+      <a href="{{ post.url }}" class="read-more" aria-label="Read more: {{ post.title }}">Read more</a>
     </article>
     {% endfor %}
 
@@ -130,7 +139,7 @@ title: Home
 
   <article class="certifications-box">
     <div class="cert-content">
-      <h3 style="margin-top: 0;">✅ Google Cloud Professional Cloud Architect</h3>
+      <h3 style="margin-top: 0;">Google Cloud Professional Cloud Architect</h3>
       <p><strong>Status:</strong> Certified</p>
       <p>Production experience with Databricks on GCP, multi-cloud VPC design, IAM governance patterns, and data platform infrastructure.</p>
       <p style="margin-top: 15px;">
@@ -146,7 +155,7 @@ title: Home
 
   <article class="certifications-box">
     <div class="cert-content">
-      <h3 style="margin-top: 0;">✅ Google Cloud Associate Cloud Engineer</h3>
+      <h3 style="margin-top: 0;">Google Cloud Associate Cloud Engineer</h3>
       <p><strong>Status:</strong> Certified</p>
       <p>Hands-on experience deploying applications, monitoring operations, and managing enterprise solutions on Google Cloud Platform.</p>
       <p style="margin-top: 15px;">
@@ -162,7 +171,7 @@ title: Home
 
   <article class="certifications-box">
     <div class="cert-content">
-      <h3 style="margin-top: 0;">🎯 AWS Solutions Architect Professional</h3>
+      <h3 style="margin-top: 0;">AWS Solutions Architect Professional</h3>
       <p><strong>Status:</strong> In Preparation</p>
       <p>Hands-on production experience with multi-account architectures, hybrid cloud connectivity (RDS Proxy + NLB), IAM security automation, and cost optimization strategies across AWS and GCP.</p>
     </div>
