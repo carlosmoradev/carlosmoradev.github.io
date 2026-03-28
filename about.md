@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "Platform Engineer with 25+ years building infrastructure across multi-cloud environments. Specializing in Snowflake governance, IAM automation, HIPAA/SOC2 compliance, and Zero Trust networking on AWS and GCP."
 ---
 
 # About Me

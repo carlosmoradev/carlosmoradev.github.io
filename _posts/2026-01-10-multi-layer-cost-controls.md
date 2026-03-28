@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Multi-Layer Cost Controls for Cloud Data Platforms"
+description: "How a 4-layer defense strategy reduced sandbox cost overruns by 60% in a Snowflake environment — warehouse sizing, resource monitors, connection pooling, and user education working together."
 date: 2026-01-10
 tags: ["finops", "cost-optimization", "snowflake", "data-platforms"]
 author: "Carlos Mora"
+image: /assets/images/social-card.png
 ---
 
 Managing costs in cloud data platforms is challenging, especially in sandbox environments where analysts experiment freely. A single misconfigured query can run for hours, consuming resources and exploding budgets.

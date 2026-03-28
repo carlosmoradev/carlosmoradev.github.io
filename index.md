@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+description: "Carlos Mora — Platform Engineer & SRE with 25+ years of experience. Multi-cloud infrastructure (AWS + GCP), data platform governance, Zero Trust networking, and compliance automation for regulated environments."
 ---
 
 <section class="hero">

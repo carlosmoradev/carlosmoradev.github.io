@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "From ticket to PR with agents: how to use Claude to automate platform changes without breaking SLOs"
+description: "AI agents in platform engineering aren't about generating code — they're about closing the loop between operational intent and reviewable execution. Here's how the pattern works and why the pull request is the key unit of governance."
 date: 2026-03-27
 tags: ["platform-engineering", "sre", "ai-agents", "claude", "automation"]
 author: "Carlos Mora"
+image: /assets/images/social-card.png
 ---
 
 In Platform Engineering and SRE, the hardest part of change is rarely writing the change itself. The hard part is everything around it: understanding the intent behind a ticket or incident, locating the right context, identifying the systems involved, deciding what should change, validating the blast radius, documenting rollback, and making the result legible enough for someone else to review with confidence.

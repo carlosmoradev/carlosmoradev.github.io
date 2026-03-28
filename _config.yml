@@ -12,6 +12,17 @@ author:
   email: hi@carlosmora.dev
   github: carlosmoradev
   linkedin: carlosmoradev
+  twitter: carlosmoradev
+
+# Social links for jekyll-seo-tag
+social:
+  name: Carlos Mora
+  links:
+    - https://github.com/carlosmoradev
+    - https://linkedin.com/in/carlosmoradev
+
+# Default social sharing image
+logo: /assets/images/social-card.png
 
 # Build settings
 theme: minima # GitHub Pages compatible theme
@@ -56,3 +67,7 @@ exclude:
   - vendor
   - .sass-cache
   - .jekyll-cache
+  - CLAUDE.md
+  - .mindblowing
+  - .claude
+  - "*.deb"

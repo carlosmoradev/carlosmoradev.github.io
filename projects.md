@@ -2,6 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
+description: "Production platform engineering case studies: multi-account Snowflake governance, cost optimization, IAM automation, and compliance frameworks built for healthcare environments on AWS and GCP."
 ---
 
 <div class="section-title">

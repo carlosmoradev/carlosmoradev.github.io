@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 permalink: /blog/
+description: "Technical writing on multi-cloud architecture, platform engineering, SRE patterns, data platform governance, and lessons from production systems on AWS and GCP."
 ---
 
 <div class="section-title">
