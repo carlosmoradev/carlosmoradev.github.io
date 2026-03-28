@@ -12,7 +12,29 @@ permalink: /blog/
   Articles about multi-cloud architecture, platform engineering, SRE patterns, and lessons learned from production systems.
 </p>
 
-{% for post in site.posts %}
+{% assign latest = site.posts.first %}
+{% if latest %}
+<div class="post-featured">
+  <div class="post-featured-header">
+    <span class="post-featured-badge">Latest Post</span>
+    <h2><a href="{{ latest.url }}">{{ latest.title }}</a></h2>
+    <div class="post-featured-meta">
+      <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%B %d, %Y" }}</time>
+      {% if latest.tags %}
+        {% for tag in latest.tags limit:4 %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="post-featured-body">
+    <p>{{ latest.excerpt | strip_html | truncatewords: 60 }}</p>
+    <a href="{{ latest.url }}" class="btn-primary">Read post</a>
+  </div>
+</div>
+{% endif %}
+
+{% for post in site.posts offset:1 %}
 <div class="post-preview">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
