@@ -68,4 +68,4 @@ Most teams haven't had that conversation yet. The ones that do it early will spe
 
 ---
 
-*This post is part of an ongoing series on operating AI systems in production infrastructure. If you found it useful, the post on [AI observability gaps in 2026](/2026/04/03/ai-observability-the-gap-nobody-is-solving/) covers the monitoring side of the same problem.*
+*This post is part of an ongoing series on operating AI systems in production infrastructure. If you found it useful, the post on [AI observability gaps in 2026](/2026/04/03/ai-observability-the-gap-nobody-is-solving.html) covers the monitoring side of the same problem.*
