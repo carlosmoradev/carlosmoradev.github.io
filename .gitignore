@@ -25,3 +25,7 @@ Thumbs.db
 # Private documentation and context
 .mindblowing/
 CLAUDE.md
+
+# Local tooling artifacts
+.engram/
+*.deb
