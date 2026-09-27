@@ -4,6 +4,8 @@ title: "MCP Without Zero Trust Is a Security Incident Waiting to Happen"
 description: "Why exposing enterprise infrastructure to AI agents requires identity federation, ephemeral credentials, and an MCP Gateway architecture rather than hopeful prompt engineering."
 date: 2026-09-27
 permalink: /blog/mcp-without-zero-trust-enterprise/
+redirect_from:
+  - /2026/09/27/mcp-without-zero-trust-enterprise.html
 tags: ["ai-engineering", "platform-engineering", "zero-trust", "security", "architecture"]
 author: "Carlos Mora"
 image: /assets/images/social-card.png

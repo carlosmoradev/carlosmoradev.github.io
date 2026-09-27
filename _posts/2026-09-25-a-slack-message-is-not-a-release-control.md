@@ -3,6 +3,9 @@ layout: post
 title: "A Slack Message Is Not a Release Control"
 description: "Relying on human vigilance to protect production is an architectural failure, not an operational one. Why blameless culture requires extreme ownership and deterministic platform guardrails."
 date: 2026-09-25
+permalink: /blog/a-slack-message-is-not-a-release-control/
+redirect_from:
+  - /2026/09/25/a-slack-message-is-not-a-release-control.html
 tags: ["platform-engineering", "leadership", "devops", "architecture", "incident-management"]
 author: "Carlos Mora"
 image: /assets/images/social-card.png
