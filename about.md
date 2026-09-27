@@ -77,7 +77,7 @@ Multi-cloud IAM, credential management, HIPAA/SOC2/HITRUST compliance
 
 - **Certifications**: [Google Cloud Professional Cloud Architect](https://www.credly.com/badges/21eb07dc-eebf-439a-b37b-3fd0130ff742) (Certified), Preparing for AWS Solutions Architect Professional
 - **Writing**: Sharing multi-cloud architecture patterns and SRE learnings
-- **Open Source**: Building sanitized versions of production tools for community use
+- **Open Source**: Developing open-source platform tooling, agentic workflow extensions, and reusable architecture patterns for the engineering community
 
 ## What Makes Me Different
 
