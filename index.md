@@ -1,14 +1,14 @@
 ---
 layout: home
 title: Home
-description: "Carlos Mora — Platform Engineer & SRE with 25+ years of experience. Multi-cloud infrastructure (AWS + GCP), data platform governance, Zero Trust networking, and compliance automation for regulated environments."
+description: "Carlos Mora: Senior Platform Engineer with 25+ years of experience. Platform architecture, data platform governance, Zero Trust networking, and compliance automation for regulated multi-cloud environments (AWS and GCP)."
 ---
 
 <section class="hero">
   <h1>Carlos Mora</h1>
-  <p class="hero-subtitle">Platform Engineer & <span>Site Reliability Engineer</span></p>
+  <p class="hero-subtitle">Senior <span>Platform Engineer</span></p>
   <p class="hero-description">
-    Platform Engineer with 25+ years building infrastructure—from on-premise data centers to hybrid clouds to multi-cloud at scale. I specialize in the complex parts: data platform governance, Zero Trust networks, IAM automation, and compliance frameworks that work across AWS and GCP.
+    25+ years designing and operating infrastructure across on-premise data centers, hybrid architectures, and multi-cloud environments. I define platform standards, build deterministic guardrails, and govern data platforms and security across AWS and GCP in regulated healthcare settings.
   </p>
   <div class="hero-cta">
     <a href="/projects" class="btn-primary">View my work</a>
@@ -52,20 +52,20 @@ description: "Carlos Mora — Platform Engineer & SRE with 25+ years of experien
   </header>
   <div class="specialties">
     <article class="specialty-item">
-      <h3>Multi-Cloud Infrastructure</h3>
-      <p>AWS & GCP in production environments with multi-account strategies and hybrid connectivity patterns</p>
+      <h3>Multi-Cloud Architecture</h3>
+      <p>Multi-account strategies, hybrid connectivity, and network isolation across AWS and GCP</p>
     </article>
     <article class="specialty-item">
       <h3>Data Platform Governance</h3>
-      <p>Snowflake, Databricks automation with RBAC, cost controls, and compliance built-in</p>
+      <p>Automated RBAC, multi-layer cost controls, and audit trails for multi-account Snowflake and Databricks</p>
     </article>
     <article class="specialty-item">
-      <h3>Security & Compliance</h3>
-      <p>Multi-cloud IAM auditing, HIPAA/SOC2/HITRUST automation, and Zero Trust implementations</p>
+      <h3>Identity & Compliance</h3>
+      <p>Multi-cloud IAM auditing, Zero Trust network access (ZTNA), and HIPAA, SOC2, and HITRUST automation</p>
     </article>
     <article class="specialty-item">
-      <h3>Infrastructure as Code</h3>
-      <p>OpenTofu/Terraform at scale with reusable modules, GitHub Actions OIDC, and validation frameworks</p>
+      <h3>Standardized IaC</h3>
+      <p>Modular OpenTofu and Terraform architectures, GitHub Actions OIDC federation, and automated validation</p>
     </article>
   </div>
 </section>
@@ -88,10 +88,10 @@ description: "Carlos Mora — Platform Engineer & SRE with 25+ years of experien
         </div>
       </header>
       <div class="project-card-body">
-        <p>Automated governance for multi-account Snowflake environments across AWS and GCP. Python framework with multi-layer cost controls and RBAC automation.</p>
+        <p>Automated governance framework for multi-account Snowflake environments across AWS and GCP, enforcing RBAC standards, preview-by-default execution, and multi-layer cost controls.</p>
         <div class="project-meta">
           <strong>Impact:</strong> 95% reduction in audit time<br>
-          <strong>Tech:</strong> Python, Snowflake, Pandas, Multi-cloud
+          <strong>Tech:</strong> Python, Snowflake, TOML, Multi-Cloud
         </div>
         <a href="/projects/snowflake-governance" class="btn-primary" aria-label="View case study: Multi-Account Data Warehouse Governance">View Case Study</a>
       </div>
@@ -174,7 +174,7 @@ description: "Carlos Mora — Platform Engineer & SRE with 25+ years of experien
     <div class="cert-content">
       <h3 style="margin-top: 0;">AWS Solutions Architect Professional</h3>
       <p><strong>Status:</strong> In Preparation</p>
-      <p>Hands-on production experience with multi-account architectures, hybrid cloud connectivity (RDS Proxy + NLB), IAM security automation, and cost optimization strategies across AWS and GCP.</p>
+      <p>Production experience with multi-account architectures, hybrid cloud network connectivity and isolation, IAM security automation, and multi-layer cost controls across AWS and GCP.</p>
     </div>
   </article>
 </section>
@@ -187,7 +187,7 @@ description: "Carlos Mora — Platform Engineer & SRE with 25+ years of experien
   </header>
 
   <p style="text-align: center; font-size: 1.1rem; color: var(--text-light); margin-bottom: 30px;">
-    Interested in multi-cloud architecture, platform engineering, or SRE practices? Let's connect!
+    Interested in platform architecture, data governance, or multi-cloud security? Let's connect.
   </p>
 
   <nav style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
