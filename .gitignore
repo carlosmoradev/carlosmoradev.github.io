@@ -29,3 +29,7 @@ CLAUDE.md
 # Local tooling artifacts
 .engram/
 *.deb
+
+# Local ODD task tracking
+odd/
+
