@@ -2,111 +2,87 @@
 layout: page
 title: About
 permalink: /about/
-description: "Platform Engineer with 25+ years building infrastructure across multi-cloud environments. Specializing in Snowflake governance, IAM automation, HIPAA/SOC2 compliance, and Zero Trust networking on AWS and GCP."
+description: "Senior Platform Engineer with 25+ years of experience across multi-cloud environments. Defining platform standards, data platform governance, IAM automation, and compliance guardrails on AWS and GCP."
 ---
 
 # About Me
 
-I'm Carlos Mora, a Platform Engineer with production experience building and operating multi-cloud infrastructure in regulated healthcare environments.
+I am Carlos Mora, a Senior Platform Engineer with 25+ years of experience spanning on-premise data centers, hybrid architectures, and multi-cloud platforms. I define platform standards, build deterministic guardrails, and govern data platforms and security in regulated healthcare environments.
 
-I've designed and deployed systems that manage multi-account Snowflake environments in production, automated Zero Trust networks connecting AWS and GCP, and built IAM audit tools for compliance teams.
+Throughout my career, I have designed multi-account Snowflake governance frameworks, automated Zero Trust network architectures connecting AWS and GCP, and built least-privilege IAM automation for regulated compliance.
 
-## My Approach
+## Core Principles
 
-- **Automate the complex**: If it's manual and error-prone, I build tools to automate it
-- **Document everything**: 15,000+ lines of technical documentation proving depth over breadth
-- **Security-first**: Every system includes graceful degradation, least privilege, and audit trails
-- **Enable teams**: Build platforms that others can use without being experts
+- **Deterministic guardrails over human vigilance:** Automate compliance, permissions, and cost controls so that safe, reliable operations are the default path.
+- **Documentation as the single source of truth:** Maintain clear architectural decision records and runbooks that allow any engineer to operate and extend platforms safely.
+- **Platforms others can use safely:** Design abstractions and tooling that internal engineering teams can adopt without needing specialized cloud administration expertise.
+- **Security and compliance by design:** Embed least privilege, auditability, and graceful degradation into the architecture from day one rather than retrofitting them before audits.
 
-## Expertise Areas
+## Capability Domains
 
-### Multi-Cloud Infrastructure
-Production experience with AWS and GCP, not just "hello world" projects. I manage real workloads spanning multiple accounts, regions, and compliance requirements.
-
-**Real-world examples:**
-- Multi-account Snowflake environments across AWS and GCP regions
-- VPN connectivity automation across multiple VPCs
-- Multi-cloud IAM governance tools
-
-### Data Platform Governance
-Operating data platforms at scale with cost controls, security automation, and compliance built-in.
-
-**Experience:**
-- Snowflake multi-account RBAC automation
+### Multi-Account Data Platform Governance
+Establishing centralized access controls, automated role management, and multi-layer cost controls across distributed data platforms.
+- Multi-account Snowflake RBAC automation and permission risk categorization
 - Databricks Unity Catalog on GCP
-- Multi-layer cost defense strategies
-- Automated change detection across accounts
+- Multi-layer cost defense (warehouse policies, resource monitors, and connection reuse)
+- Cross-account change detection with graceful degradation
 
-### Security & Compliance
-Healthcare compliance (HIPAA, SOC2, HITRUST) isn't a checkbox—it's embedded in architecture from day one.
+### Secure Connectivity & Data Access
+Designing network isolation and controlled data access across AWS and GCP for sensitive workloads.
+- Zero Trust Network Access (ZTNA) and hybrid multi-cloud connectivity
+- Secure database access layers with connection pooling
+- VPN connectivity automation across multiple VPCs
 
-**Implementations:**
-- Multi-cloud IAM auditing tools
-- Automated permission risk categorization
-- Zero Trust Network Access (ZTNA)
+### Identity, Access & Compliance Governance
+Translating regulatory requirements (HIPAA, SOC2, HITRUST) into automated platform controls and verifiable audit trails.
+- Multi-cloud IAM auditing and automated permission risk categorization
+- GitHub Actions OIDC federation (zero long-lived credentials in CI/CD)
 - Credential rotation without downtime
+- Automated compliance reporting and audit readiness
 
-### Infrastructure as Code
-OpenTofu/Terraform modules built for production: tested, documented, and reusable.
-
-**Patterns:**
-- Multi-cloud module libraries
-- GitHub Actions with OIDC (no long-lived credentials)
-- State management and backend configuration
+### Standardized Infrastructure as Code
+Building reusable, tested, and documented IaC module libraries that enforce architectural guardrails across teams.
+- Multi-cloud OpenTofu and Terraform module libraries
 - Validation and pre-deployment checks
+- State management and backend configuration standards
 
-## Technical Skills
+### AI Platform Security & Governance (Current Focus)
+Applying platform engineering discipline and Zero Trust security principles to agentic workflows and AI integrations.
+- Zero Trust boundaries and least-privilege constraints for Model Context Protocol (MCP) integrations
+- Operational observability patterns for non-deterministic AI workloads
+- Agent-assisted engineering workflows with deterministic guardrails and pull-request verification
 
-**Cloud Platforms:**
-AWS (EC2, RDS, RDS Proxy, NLB, Secrets Manager, IAM, S3)
-GCP (Compute Engine, Cloud SQL, Secret Manager, VPC, IAM, Cloud Storage)
+## Technical Stack Summary
 
-**Data Platforms:**
-Snowflake, Databricks, BigQuery
-
-**Infrastructure as Code:**
-OpenTofu, Terraform, GitHub Actions
-
-**Programming:**
-Python (boto3, snowflake-connector, pandas, FastAPI), TypeScript/Node.js
-
-**Security:**
-Multi-cloud IAM, credential management, HIPAA/SOC2/HITRUST compliance
+- **Cloud:** AWS and GCP (multi-account)
+- **Data Platforms:** Snowflake, Databricks, BigQuery
+- **Infrastructure as Code:** OpenTofu, Terraform, GitHub Actions
+- **Languages:** Python, TypeScript/Node.js
+- **Compliance:** HIPAA, SOC2, HITRUST
 
 ## Current Focus
 
-- **Certifications**: [Google Cloud Professional Cloud Architect](https://www.credly.com/badges/21eb07dc-eebf-439a-b37b-3fd0130ff742) (Certified), Preparing for AWS Solutions Architect Professional
-- **Writing**: Sharing multi-cloud architecture patterns and SRE learnings
-- **Open Source**: Developing open-source platform tooling, agentic workflow extensions, and reusable architecture patterns for the engineering community
+- **Certifications:** [Google Cloud Professional Cloud Architect](https://www.credly.com/badges/21eb07dc-eebf-439a-b37b-3fd0130ff742) (Certified), [Google Cloud Associate Cloud Engineer](https://www.credly.com/badges/973bb37a-19cd-4c47-9c2a-d6307da51bdd) (Certified), preparing for AWS Solutions Architect Professional.
+- **Writing:** Documenting platform governance, FinOps lifecycle management, and practical Zero Trust architecture on [carlosmora.dev/blog](/blog).
+- **Open Source:** Developing platform tooling, agentic workflow extensions, and reusable architecture patterns for the engineering community.
 
-## What Makes Me Different
+## Platform Engineering at Regulated Scale
 
-Most platform engineers have toy projects or single-cloud experience. I operate production systems in regulated environments where downtime and security failures have real consequences.
+Operating platforms in regulated environments requires systems designed for auditability, resilience, and strict access boundaries:
 
-**Production scale:**
-- Multi-account Snowflake environments in production across clouds
-- Extensive IaC deployments (OpenTofu/Terraform)
-- Multi-cloud architecture across AWS and GCP regions
-- Healthcare compliance automation at scale
-
-**Documentation discipline:**
-- Two-layer documentation strategy: public docs any engineer can operate from, private decision logs I actually use
-- Certification prep notes mapped to real exam objectives, not just topic lists
-- Comprehensive decision logs and troubleshooting guides from production incidents
-
-**Security mindset:**
-- Dry-run by default in all admin tools
-- Graceful degradation when systems fail
-- Multi-layer cost controls
-- Zero long-lived credentials in CI/CD
+- **Regulated multi-cloud scale:** Multi-account data warehouse governance and OpenTofu/Terraform module libraries across AWS and GCP.
+- **Safe-by-default tooling:** Administrative tooling executes in preview mode by default. Destructive or privileged modifications require explicit elevation, preventing unintended changes.
+- **Compliance by design:** Automated change detection, least-privilege RBAC, and multi-layer cost controls embedded directly into platform infrastructure.
+- **Resilience through graceful degradation:** Administrative and audit pipelines tolerate single-account maintenance or transient network partitions without halting broader governance sweeps.
+- **Operational documentation:** Two-layer documentation discipline combining clear operator runbooks for engineering teams with structured architectural decision records.
 
 ## Beyond Code
 
-After 25+ years in infrastructure—from on-premise data centers to multi-cloud at scale—I've learned that sustainable performance engineering applies to systems AND people.
+After 25+ years in infrastructure, spanning on-premise data centers to multi-cloud at scale, I have learned that sustainable performance engineering applies to systems AND people.
 
-As a neurodivergent engineer, I approach complex systems with pattern recognition that's both a strength and a responsibility. The same principles that prevent infrastructure burnout (observability, graceful degradation, capacity planning) apply to career sustainability.
+As a neurodivergent engineer, I approach complex systems with pattern recognition that is both a strength and a responsibility. The same principles that prevent infrastructure burnout (observability, graceful degradation, capacity planning) apply to career sustainability.
 
-The tech industry often celebrates "hustle culture" and endless availability. I've learned that the engineers who last decades—who ship reliable systems consistently—treat their own capacity as seriously as they treat system capacity. Monitoring your own metrics matters as much as monitoring your infrastructure.
+The tech industry often celebrates "hustle culture" and endless availability. I have learned that the engineers who last decades (and who ship reliable systems consistently) treat their own capacity as seriously as they treat system capacity. Monitoring your own metrics matters as much as monitoring your infrastructure.
 
 I occasionally write about burnout prevention, neurodivergence in tech, and building careers that last decades, not just sprints.
 
