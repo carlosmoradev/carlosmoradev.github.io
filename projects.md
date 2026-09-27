@@ -2,15 +2,15 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: "Production platform engineering case studies: multi-account Snowflake governance, cost optimization, IAM automation, and compliance frameworks built for healthcare environments on AWS and GCP."
+description: "Platform engineering case studies: multi-account data governance, safe-by-default automation, IAM guardrails, and compliance frameworks for regulated multi-cloud environments (AWS and GCP)."
 ---
 
 <div class="section-title">
-  <h1>Production Projects</h1>
+  <h1>Platform Governance Case Studies</h1>
 </div>
 
 <p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 0 auto 60px;">
-  These projects demonstrate multi-cloud platform engineering, data governance, and security automation expertise in production healthcare environments.
+  Architectural case studies demonstrating multi-account data platform governance, deterministic guardrails, and compliance automation across AWS and GCP in regulated healthcare environments.
 </p>
 
 <div class="projects-grid">
