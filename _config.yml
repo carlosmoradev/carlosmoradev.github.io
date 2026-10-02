@@ -1,8 +1,8 @@
 # Site settings
 title: Carlos Mora
 description: >-
-  Senior Platform Engineer specializing in platform architecture,
-  data platform governance, and compliance automation for regulated multi-cloud environments.
+  Platform Architect specializing in multi-cloud architecture,
+  data platform governance, and compliance automation for regulated enterprise environments.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://carlosmora.dev"
 

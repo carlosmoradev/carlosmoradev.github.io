@@ -2,12 +2,12 @@
 layout: page
 title: About
 permalink: /about/
-description: "Senior Platform Engineer with 25+ years of experience across multi-cloud environments. Defining platform standards, data platform governance, IAM automation, and compliance guardrails on AWS and GCP."
+description: "Platform Architect with 25+ years of experience across multi-cloud environments. Defining platform standards, data platform governance, IAM automation, and compliance guardrails on AWS and GCP."
 ---
 
 # About Me
 
-I am Carlos Mora, a Senior Platform Engineer with 25+ years of experience spanning on-premise data centers, hybrid architectures, and multi-cloud platforms. I define platform standards, build deterministic guardrails, and govern data platforms and security in regulated healthcare environments.
+I am Carlos Mora, a Platform Architect with 25+ years of experience spanning on-premise data centers, hybrid architectures, and multi-cloud platforms. I define platform standards, build deterministic guardrails, and govern data platforms and security in regulated enterprise environments.
 
 Throughout my career, I have designed multi-account Snowflake governance frameworks, automated Zero Trust network architectures connecting AWS and GCP, and built least-privilege IAM automation for regulated compliance.
 

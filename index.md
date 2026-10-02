@@ -1,14 +1,14 @@
 ---
 layout: home
 title: Home
-description: "Carlos Mora: Senior Platform Engineer with 25+ years of experience. Platform architecture, data platform governance, Zero Trust networking, and compliance automation for regulated multi-cloud environments (AWS and GCP)."
+description: "Carlos Mora: Platform Architect with 25+ years of experience. Multi-cloud architecture, data platform governance, Zero Trust networking, and compliance automation for regulated enterprise environments (AWS and GCP)."
 ---
 
 <section class="hero">
   <h1>Carlos Mora</h1>
-  <p class="hero-subtitle">Senior <span>Platform Engineer</span></p>
+  <p class="hero-subtitle"><span>Platform Architect</span> | Multi-Cloud & Governance</p>
   <p class="hero-description">
-    25+ years designing and operating infrastructure across on-premise data centers, hybrid architectures, and multi-cloud environments. I define platform standards, build deterministic guardrails, and govern data platforms and security across AWS and GCP in regulated healthcare settings.
+    25+ years architecting resilient infrastructure across hybrid and multi-cloud ecosystems (AWS & GCP). I build portable platforms, deterministic governance guardrails, and Zero Trust connectivity that eliminate single points of failure and scale regulated data and AI workloads safely.
   </p>
   <div class="hero-cta">
     <a href="/projects" class="btn-primary">View my work</a>
