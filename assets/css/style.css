@@ -21,31 +21,51 @@
   --shadow-hover: 0 4px 12px rgba(28, 25, 23, 0.08);
 }
 
-/* Native Dark Mode (Deep Zinc & Warm Gold Amber) */
+/* Native Dark Mode & Manual [data-theme="dark"] */
+[data-theme="dark"] {
+  --text-color: #f4f4f5; /* Zinc-100 */
+  --text-light: #a1a1aa; /* Zinc-400 */
+  --text-muted: #71717a; /* Zinc-500 */
+  --border-color: #27272a; /* Zinc-800 */
+  --bg-color: #09090b; /* Zinc-950 deep architectural slate */
+  --bg-surface: #141416; /* Elevated zinc card background */
+  --bg-subtle: #27272a; /* Zinc-800 */
+  --bg-light: #27272a;
+  --primary-color: #f59e0b; /* Luminous warm amber (Amber-500) */
+  --primary-dark: #fbbf24; /* Amber-400 */
+  --primary-light: #451a03; /* Deep amber glow */
+  --secondary-color: #f4f4f5;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #f4f4f5; /* Zinc-100 */
-    --text-light: #a1a1aa; /* Zinc-400 */
-    --text-muted: #71717a; /* Zinc-500 */
-    --border-color: #27272a; /* Zinc-800 */
-    --bg-color: #09090b; /* Zinc-950 deep architectural slate */
-    --bg-surface: #141416; /* Elevated zinc card background */
-    --bg-subtle: #27272a; /* Zinc-800 */
+  :root:not([data-theme="light"]) {
+    --text-color: #f4f4f5;
+    --text-light: #a1a1aa;
+    --text-muted: #71717a;
+    --border-color: #27272a;
+    --bg-color: #09090b;
+    --bg-surface: #141416;
+    --bg-subtle: #27272a;
     --bg-light: #27272a;
-    --primary-color: #f59e0b; /* Luminous warm amber (Amber-500) */
-    --primary-dark: #fbbf24; /* Amber-400 */
-    --primary-light: #451a03; /* Deep amber glow */
+    --primary-color: #f59e0b;
+    --primary-dark: #fbbf24;
+    --primary-light: #451a03;
     --secondary-color: #f4f4f5;
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
+}
 
-  .btn-primary {
+[data-theme="dark"] .btn-primary,
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .btn-primary {
     color: #18181b !important;
     font-weight: 600;
   }
 
-  .btn-primary:hover {
+  :root:not([data-theme="light"]) .btn-primary:hover {
     color: #18181b !important;
   }
 }
@@ -149,6 +169,54 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.theme-toggle {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--primary-color);
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+.theme-toggle .icon-moon {
+  display: inline-block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: inline-block;
+}
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun {
+    display: inline-block;
+  }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon {
+    display: none;
+  }
+}
+
 /* Hero Section */
 .hero {
   text-align: left;
@@ -161,14 +229,14 @@ a:hover {
   font-size: 2.75rem;
   font-weight: 700;
   letter-spacing: -0.025em;
-  color: #111827;
+  color: var(--text-color);
   margin-bottom: 8px;
   line-height: 1.15;
 }
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: #4b5563;
+  color: var(--text-light);
   margin-top: 0;
   margin-bottom: 18px;
   font-weight: 400;
@@ -183,7 +251,7 @@ a:hover {
 .hero-description {
   font-size: 1.15rem;
   line-height: 1.85;
-  color: #374151;
+  color: var(--text-color);
   margin-bottom: 0;
   max-width: 860px;
 }
@@ -348,7 +416,7 @@ a:hover {
 
 .post-featured-body p {
   font-size: 1.05rem;
-  color: #374151;
+  color: var(--text-color);
   line-height: 1.7;
   margin-bottom: 16px;
 }
@@ -672,7 +740,7 @@ a:hover {
   font-size: 2.25rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: #111827;
+  color: var(--text-color);
   margin-bottom: 16px;
   line-height: 1.25;
 }
