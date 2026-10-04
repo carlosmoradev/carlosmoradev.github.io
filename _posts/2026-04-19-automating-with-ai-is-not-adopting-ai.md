@@ -3,6 +3,9 @@ layout: post
 title: "Automating with AI is not adopting AI"
 description: "Most teams stop at automation and call it AI adoption. That's the first level. There are two more — and the gap between them is where teams either fall behind or pull ahead."
 date: 2026-04-19
+permalink: /blog/automating-with-ai-is-not-adopting-ai/
+redirect_from:
+  - /2026/04/19/automating-with-ai-is-not-adopting-ai.html
 tags: ["ai-agents", "platform-engineering", "leadership", "strategy", "llm"]
 author: "Carlos Mora"
 image: /assets/images/social-card.png
