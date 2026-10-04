@@ -10,17 +10,6 @@ description: "Carlos Mora: Principal Platform Architect & AI Systems Engineer. M
   <p class="hero-description">
     If production reliability or compliance depends on human vigilance, the architecture has already failed. With 25+ years designing enterprise infrastructure across on-premise, AWS, and GCP, I build platforms with deterministic guardrails—removing traps from the floor so engineering teams can scale data platforms and AI workloads safely by default.
   </p>
-  <nav class="hero-nav" aria-label="Quick navigation">
-    <a href="/blog">Essays</a>
-    <span class="sep">·</span>
-    <a href="/projects">Case Studies</a>
-    <span class="sep">·</span>
-    <a href="/about">About</a>
-    <span class="sep">·</span>
-    <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
-    <span class="sep">·</span>
-    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-  </nav>
 </section>
 
 {% assign latest = site.posts.first %}
