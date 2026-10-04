@@ -6,9 +6,9 @@ description: "Carlos Mora: Platform Architect with 25+ years of experience. Mult
 
 <section class="hero">
   <h1>Carlos Mora</h1>
-  <p class="hero-subtitle"><span>Platform Architect</span> | Multi-Cloud & Governance</p>
+  <p class="hero-subtitle"><span>Platform Architect</span> | Multi-Cloud & Enterprise Governance</p>
   <p class="hero-description">
-    25+ years architecting resilient infrastructure across hybrid and multi-cloud ecosystems (AWS & GCP). I build portable platforms, deterministic governance guardrails, and Zero Trust connectivity that eliminate single points of failure and scale regulated data and AI workloads safely.
+    If production reliability or compliance depends on human vigilance, the architecture has already failed. With 25+ years designing enterprise infrastructure across on-premise, AWS, and GCP, I build platforms with deterministic guardrails—removing traps from the floor so engineering teams can scale data platforms and AI workloads safely by default.
   </p>
   <div class="hero-cta">
     <a href="/projects" class="btn-primary">View my work</a>
@@ -53,19 +53,19 @@ description: "Carlos Mora: Platform Architect with 25+ years of experience. Mult
   <div class="specialties">
     <article class="specialty-item">
       <h3>Multi-Cloud Architecture</h3>
-      <p>Multi-account strategies, hybrid connectivity, and network isolation across AWS and GCP</p>
+      <p>Zero Trust network isolation, multi-account landing zones, and hybrid interconnects across AWS and GCP that contain blast radiuses by design.</p>
     </article>
     <article class="specialty-item">
       <h3>Data Platform Governance</h3>
-      <p>Automated RBAC, multi-layer cost controls, and audit trails for multi-account Snowflake and Databricks</p>
+      <p>Automated least-privilege RBAC, multi-layer FinOps circuit breakers, and immutable audit trails across multi-account Snowflake and Databricks.</p>
     </article>
     <article class="specialty-item">
       <h3>Identity & Compliance</h3>
-      <p>Multi-cloud IAM auditing, Zero Trust network access (ZTNA), and HIPAA, SOC2, and HITRUST automation</p>
+      <p>Eliminating static credentials with OIDC federation and translating HIPAA, SOC 2, and HITRUST mandates into automated, verifiable code gates.</p>
     </article>
     <article class="specialty-item">
-      <h3>Standardized IaC</h3>
-      <p>Modular OpenTofu and Terraform architectures, GitHub Actions OIDC federation, and automated validation</p>
+      <h3>Deterministic Guardrails</h3>
+      <p>Modular OpenTofu and Terraform platforms where safe operations are the default path and human error is structurally prevented in CI/CD.</p>
     </article>
   </div>
 </section>
@@ -88,7 +88,7 @@ description: "Carlos Mora: Platform Architect with 25+ years of experience. Mult
         </div>
       </header>
       <div class="project-card-body">
-        <p>Automated governance framework for multi-account Snowflake environments across AWS and GCP, enforcing RBAC standards, preview-by-default execution, and multi-layer cost controls.</p>
+        <p>Deterministic governance engine eliminating privilege drift and runaway warehouse costs across distributed Snowflake accounts on AWS and GCP. Enforces preview-by-default execution and automated least-privilege RBAC as code.</p>
         <div class="project-meta">
           <strong>Impact:</strong> 95% reduction in audit time<br>
           <strong>Tech:</strong> Python, Snowflake, TOML, Multi-Cloud

@@ -8,28 +8,28 @@ impact: "95% reduction in audit time, 80% connection reuse rate"
 
 ## Problem
 
-A healthcare data platform organization operated multiple Snowflake accounts across AWS and GCP, spanning production, development, and sandbox environments across multiple cloud regions.
+In regulated enterprise healthcare data platforms, infrastructure rarely fails because of query syntax. It fails because of governance entropy: over-privileged administrative grants accumulate, privilege drift goes undetected across distributed cloud accounts, and compute budgets explode in sandboxes where analysts experiment without circuit breakers.
 
-Operating at this scale without centralized platform guardrails created several operational and compliance risks:
-- Inconsistent permission models and role definitions across accounts
-- Over-privileged administrative access grants exceeding operational requirements
-- Labor-intensive monthly security audits that consumed significant engineering hours
-- Absence of automated change detection and privilege drift monitoring across accounts
-- Unpredictable sandbox compute usage leading to budget overruns
-- Fragmented credential management across environments
+When operating multiple Snowflake accounts across AWS and GCP regions, relying on manual vigilance and ad-hoc SQL grants is an operational liability:
+- Inconsistent permission models and role definitions diverging across environments
+- Over-privileged administrative grants exceeding operational necessity
+- Labor-intensive monthly security audits that consumed hundreds of engineering hours
+- Absence of automated change detection to catch privilege drift before auditors do
+- Unpredictable sandbox compute usage leading to severe budget overruns
+- Fragmented credential management across teams and regions
 
 ## Architecture Decisions
 
-To address these challenges without introducing fragile monolithic infrastructure, the platform was designed around three architectural decisions:
+To solve this without creating fragile, monolithic management tooling, the platform was designed around three architectural decisions:
 
-### 1. Modular Governance Engine
-Rather than building a monolithic administration tool, the framework uses independently deployable governance modules with an isolated blast radius. Dedicated modules manage distinct responsibilities (user auditing, privilege reconciliation, drift detection) while sharing core services for authentication, query execution, and structured reporting.
+### 1. Modular Governance Engine (Isolated Blast Radius)
+Rather than building a monolithic administration script, the framework uses independently deployable governance modules. Dedicated, isolated modules manage distinct responsibilities (user auditing, privilege reconciliation, drift detection) while sharing core services for authentication, query execution, and structured reporting.
 
 ### 2. Externalized, Environment-Agnostic Configuration
-Configuration and environment definitions are decoupled from code. Secure credential references and account connection profiles are managed through external configuration files, preventing secrets from entering repositories and allowing the same code to run in local administrative environments and automated pipelines.
+Configuration and environment policies are strictly decoupled from code. Secure credential references and account connection profiles are managed through external TOML declarations, keeping secrets out of repositories and allowing identical policy logic to run across local administrative workstations and automated CI/CD pipelines.
 
-### 3. Graceful Degradation for High Availability Auditing
-In a multi-account healthcare architecture, individual account maintenance or transient network partitions must not block governance visibility across the remaining platform. The audit engine isolates per-account operations, capturing detailed diagnostic logs for failed connections while continuing execution across all available accounts to produce consolidated compliance reports.
+### 3. Graceful Degradation for Continuous Auditing
+In a multi-account healthcare architecture, individual account maintenance or transient network partitions must never blind governance visibility across the remaining platform. The audit engine isolates per-account operations, capturing diagnostic logs for failed connections while continuing execution across all available accounts to produce consolidated compliance reports.
 
 ## Platform Guardrails
 

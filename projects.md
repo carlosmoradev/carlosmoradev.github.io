@@ -6,11 +6,11 @@ description: "Platform engineering case studies: multi-account data governance, 
 ---
 
 <div class="section-title">
-  <h1>Platform Governance Case Studies</h1>
+  <h1>Architectural Case Studies</h1>
 </div>
 
 <p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 0 auto 60px;">
-  Architectural case studies demonstrating multi-account data platform governance, deterministic guardrails, and compliance automation across AWS and GCP in regulated healthcare environments.
+  Battle-tested architectures from regulated multi-cloud environments. Proving that deterministic guardrails, automated least-privilege, and FinOps circuit breakers outperform human vigilance under enterprise scale.
 </p>
 
 <div class="projects-grid">
