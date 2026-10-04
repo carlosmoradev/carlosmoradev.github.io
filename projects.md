@@ -17,11 +17,11 @@ description: "Platform engineering case studies: multi-account data governance, 
 {% for project in site.projects %}
   <div class="project-card">
     <div class="project-card-header">
-      <h3><a href="{{ project.url }}" style="color: white; text-decoration: none;">{{ project.title }}</a></h3>
+      <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
       {% if project.tags %}
       <div class="project-tags">
         {% for tag in project.tags limit:4 %}
-          <span class="tag" style="background-color: rgba(255,255,255,0.2); color: white; border-color: white;">{{ tag }}</span>
+          <span class="tag">{{ tag }}</span>
         {% endfor %}
       </div>
       {% endif %}
