@@ -9,7 +9,7 @@ description: "Platform engineering case studies: multi-account data governance, 
   <h1>Architectural Case Studies</h1>
 </div>
 
-<p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 0 auto 60px;">
+<p class="section-lead">
   Battle-tested architectures from regulated multi-cloud environments. Proving that deterministic guardrails, automated least-privilege, and FinOps circuit breakers outperform human vigilance under enterprise scale.
 </p>
 

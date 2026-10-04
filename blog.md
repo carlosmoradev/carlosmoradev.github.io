@@ -9,7 +9,7 @@ description: "Technical writing on multi-cloud architecture, platform engineerin
   <h1>Technical Writing</h1>
 </div>
 
-<p style="text-align: center; font-size: 1.1rem; color: var(--text-light); max-width: 680px; margin: 0 auto 60px;">
+<p class="section-lead">
   First-principles engineering essays on multi-cloud architecture, data platform governance, and AI workload realities. Grounded in production systems, Zero Trust discipline, and 25 years of platform lessons.
 </p>
 

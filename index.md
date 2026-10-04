@@ -1,35 +1,43 @@
 ---
 layout: home
 title: Home
-description: "Carlos Mora: Platform Architect with 25+ years of experience. Multi-cloud architecture, data platform governance, Zero Trust networking, and compliance automation for regulated enterprise environments (AWS and GCP)."
+description: "Carlos Mora: Principal Platform Architect & AI Systems Engineer. Multi-cloud architecture, data platform governance, Zero Trust systems, and deterministic AI infrastructure."
 ---
 
 <section class="hero">
   <h1>Carlos Mora</h1>
-  <p class="hero-subtitle"><span>Platform Architect</span> | Multi-Cloud & Enterprise Governance</p>
+  <p class="hero-subtitle">Principal Platform Architect &amp; AI Systems Engineer</p>
   <p class="hero-description">
     If production reliability or compliance depends on human vigilance, the architecture has already failed. With 25+ years designing enterprise infrastructure across on-premise, AWS, and GCP, I build platforms with deterministic guardrails—removing traps from the floor so engineering teams can scale data platforms and AI workloads safely by default.
   </p>
-  <div class="hero-cta">
-    <a href="/projects" class="btn-primary">View my work</a>
-    <a href="/about" class="btn-secondary">About me</a>
-  </div>
+  <nav class="hero-nav" aria-label="Quick navigation">
+    <a href="/blog">Essays</a>
+    <span class="sep">·</span>
+    <a href="/projects">Case Studies</a>
+    <span class="sep">·</span>
+    <a href="/about">About</a>
+    <span class="sep">·</span>
+    <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+    <span class="sep">·</span>
+    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
 </section>
 
 {% assign latest = site.posts.first %}
 {% if latest %}
-<section>
-  <header class="section-title">
-    <h2>Latest Post</h2>
-  </header>
+<section class="home-section">
+  <div class="section-title">
+    <h2>Featured Architectural Essay</h2>
+  </div>
 
   <article class="post-featured">
     <div class="post-featured-header">
-      <span class="post-featured-badge">New</span>
+      <span class="post-featured-badge">Featured Essay</span>
       <h3><a href="{{ latest.url }}">{{ latest.title }}</a></h3>
       <div class="post-featured-meta">
         <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%B %d, %Y" }}</time>
         {% if latest.tags %}
+          <span class="tag-divider">·</span>
           {% for tag in latest.tags limit:4 %}
             <span class="tag">{{ tag }}</span>
           {% endfor %}
@@ -37,162 +45,102 @@ description: "Carlos Mora: Platform Architect with 25+ years of experience. Mult
       </div>
     </div>
     <div class="post-featured-body">
-      <p>{{ latest.excerpt | strip_html | truncatewords: 60 }}</p>
-      <a href="{{ latest.url }}" class="btn-primary" aria-label="Read post: {{ latest.title }}">Read post</a>
+      <p>{{ latest.excerpt | strip_html | truncatewords: 55 }}</p>
+      <a href="{{ latest.url }}" class="read-more" aria-label="Read essay: {{ latest.title }}">Read Essay</a>
     </div>
   </article>
 </section>
-
----
-
 {% endif %}
-<section>
-  <header class="section-title">
-    <h2>Areas of Expertise</h2>
-  </header>
-  <div class="specialties">
-    <article class="specialty-item">
-      <h3>Multi-Cloud Architecture</h3>
-      <p>Zero Trust network isolation, multi-account landing zones, and hybrid interconnects across AWS and GCP that contain blast radiuses by design.</p>
-    </article>
-    <article class="specialty-item">
-      <h3>Data Platform Governance</h3>
-      <p>Automated least-privilege RBAC, multi-layer FinOps circuit breakers, and immutable audit trails across multi-account Snowflake and Databricks.</p>
-    </article>
-    <article class="specialty-item">
-      <h3>Identity & Compliance</h3>
-      <p>Eliminating static credentials with OIDC federation and translating HIPAA, SOC 2, and HITRUST mandates into automated, verifiable code gates.</p>
-    </article>
-    <article class="specialty-item">
-      <h3>Deterministic Guardrails</h3>
-      <p>Modular OpenTofu and Terraform platforms where safe operations are the default path and human error is structurally prevented in CI/CD.</p>
-    </article>
-  </div>
-</section>
 
----
-
-<section>
-  <header class="section-title">
-    <h2>Featured Projects</h2>
-  </header>
-
-  <div class="projects-grid">
-    <article class="project-card">
-      <header class="project-card-header">
-        <h3>Multi-Account Data Warehouse Governance</h3>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Snowflake</span>
-          <span class="tag">Multi-Cloud</span>
-        </div>
-      </header>
-      <div class="project-card-body">
-        <p>Deterministic governance engine eliminating privilege drift and runaway warehouse costs across distributed Snowflake accounts on AWS and GCP. Enforces preview-by-default execution and automated least-privilege RBAC as code.</p>
-        <div class="project-meta">
-          <strong>Impact:</strong> 95% reduction in audit time<br>
-          <strong>Tech:</strong> Python, Snowflake, TOML, Multi-Cloud
-        </div>
-        <a href="/projects/snowflake-governance" class="btn-primary" aria-label="View case study: Multi-Account Data Warehouse Governance">View Case Study</a>
-      </div>
-    </article>
-  </div>
-</section>
-
----
-
-<section>
-  <header class="section-title">
+<section class="home-section">
+  <div class="section-title">
     <h2>Recent Writing</h2>
-  </header>
+  </div>
 
-  {% if site.posts.size > 0 %}
-    {% for post in site.posts limit:3 %}
-    <article class="post-preview">
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <div class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+  <div class="posts-list">
+    {% for post in site.posts limit:5 %}
+    <article class="post-row">
+      <div class="post-row-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+      </div>
+      <div class="post-row-content">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         {% if post.tags %}
-          <div class="project-tags">
-            {% for tag in post.tags limit:3 %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
+        <div class="post-tags">
+          {% for tag in post.tags limit:3 %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
         {% endif %}
       </div>
-      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
-      <a href="{{ post.url }}" class="read-more" aria-label="Read more: {{ post.title }}">Read more</a>
     </article>
     {% endfor %}
+  </div>
 
-    <p style="text-align: center; margin-top: 40px;">
-      <a href="/blog" class="btn-primary">View All Posts</a>
-    </p>
-  {% endif %}
+  <div class="section-footer">
+    <a href="/blog" class="read-more">View complete writing archive</a>
+  </div>
 </section>
 
----
+<section class="home-section">
+  <div class="section-title">
+    <h2>Architectural Case Studies</h2>
+  </div>
 
-<section>
-  <header class="section-title">
-    <h2>Certifications</h2>
-  </header>
-
-  <article class="certifications-box">
-    <div class="cert-content">
-      <h3 style="margin-top: 0;">Google Cloud Professional Cloud Architect</h3>
-      <p><strong>Status:</strong> Certified</p>
-      <p>Production experience with Databricks on GCP, multi-cloud VPC design, IAM governance patterns, and data platform infrastructure.</p>
-      <p style="margin-top: 15px;">
-        <a href="https://www.credly.com/badges/21eb07dc-eebf-439a-b37b-3fd0130ff742" target="_blank" rel="noopener" style="color: var(--primary-color); font-weight: 600;">
-          View Credential →
-        </a>
-      </p>
-    </div>
-    <div class="cert-badge">
-      <img src="/assets/images/gcp-pca-badge.png" alt="Google Cloud Professional Cloud Architect Badge">
-    </div>
-  </article>
-
-  <article class="certifications-box">
-    <div class="cert-content">
-      <h3 style="margin-top: 0;">Google Cloud Associate Cloud Engineer</h3>
-      <p><strong>Status:</strong> Certified</p>
-      <p>Hands-on experience deploying applications, monitoring operations, and managing enterprise solutions on Google Cloud Platform.</p>
-      <p style="margin-top: 15px;">
-        <a href="https://www.credly.com/badges/973bb37a-19cd-4c47-9c2a-d6307da51bdd" target="_blank" rel="noopener" style="color: var(--primary-color); font-weight: 600;">
-          View Credential →
-        </a>
-      </p>
-    </div>
-    <div class="cert-badge">
-      <img src="/assets/images/gcp-cea-badge.png" alt="Google Cloud Associate Cloud Engineer Badge">
-    </div>
-  </article>
-
-  <article class="certifications-box">
-    <div class="cert-content">
-      <h3 style="margin-top: 0;">AWS Solutions Architect Professional</h3>
-      <p><strong>Status:</strong> In Preparation</p>
-      <p>Production experience with multi-account architectures, hybrid cloud network connectivity and isolation, IAM security automation, and multi-layer cost controls across AWS and GCP.</p>
-    </div>
-  </article>
+  <div class="projects-container">
+    {% for project in site.projects %}
+    <article class="project-card">
+      <div class="project-card-header">
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        {% if project.tags %}
+        <div class="project-tags">
+          {% for tag in project.tags limit:4 %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="project-card-body">
+        <p>{{ project.description }}</p>
+        {% if project.impact %}
+        <div class="project-meta">
+          <strong>Impact:</strong> {{ project.impact }}
+        </div>
+        {% endif %}
+        {% if project.tech_stack %}
+        <div class="project-meta">
+          <strong>Tech Stack:</strong> {{ project.tech_stack }}
+        </div>
+        {% endif %}
+        <a href="{{ project.url }}" class="read-more">Read Retrospective</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </section>
 
----
+<section class="home-section">
+  <div class="section-title">
+    <h2>Architectural Convictions</h2>
+  </div>
 
-<section>
-  <header class="section-title">
-    <h2>Get in Touch</h2>
-  </header>
-
-  <p style="text-align: center; font-size: 1.1rem; color: var(--text-light); margin-bottom: 30px;">
-    Interested in platform architecture, data governance, or multi-cloud security? Let's connect.
-  </p>
-
-  <nav style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="https://github.com/{{ site.author.github }}" class="btn-primary" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://linkedin.com/in/{{ site.author.linkedin }}" class="btn-primary" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="mailto:{{ site.author.email }}" class="btn-primary">Email</a>
-  </nav>
+  <div class="convictions-list">
+    <article class="conviction-item">
+      <h3>Deterministic Guardrails over Human Vigilance</h3>
+      <p>A Slack message, a post-deploy checklist, or a "be careful" warning is an architectural antipattern. If an engineer can trigger an outage by missing a notification on a Friday afternoon, the failure belongs to the platform design. Structural IAM constraints and automated pre-flight gates prevent errors before execution.</p>
+    </article>
+    <article class="conviction-item">
+      <h3>Zero Trust for Autonomous &amp; Agentic Workloads</h3>
+      <p>Exposing APIs to LLMs without ephemeral credentials, identity federation, and execution gateways turns agentic tooling into arbitrary remote code execution. AI agents must operate under the same least-privilege boundaries and audit trails as human operators.</p>
+    </article>
+    <article class="conviction-item">
+      <h3>Multi-Layer Cost Circuit Breakers</h3>
+      <p>Cost control in distributed data platforms cannot rely on end-of-month invoice reconciliations. FinOps discipline requires proactive architectural circuit breakers: strict warehouse auto-suspend policies, statement timeouts, resource monitors, and query connection reuse embedded into IaC.</p>
+    </article>
+    <article class="conviction-item">
+      <h3>Compliance by Construction</h3>
+      <p>In regulated enterprise environments (HIPAA, SOC 2, HITRUST), compliance cannot be a panicked quarterly audit scramble. It must be an immutable, continuously generated byproduct of platform automation, OIDC federation, and immutable change logs.</p>
+    </article>
+  </div>
 </section>
