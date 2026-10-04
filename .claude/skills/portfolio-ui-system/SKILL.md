@@ -15,7 +15,8 @@ Enforce these constraints to maintain a clean, authoritative Principal Platform 
 
 ## Hard Rules
 
-- **Reading Measure**: Article and page prose (`.post-content`, `.project-content`, `.page-content`) must never exceed `740px` (`max-width: 740px; margin-inline: auto;`). Target 60–80 characters per line.
+- **Reading Measure**: Article reading prose (`.post-content`) must be scoped to `740-760px` (`margin-inline: auto;`) to maintain 60–80 characters per line. General layout pages (`.page-content`) and showcase grids must use the full `.container` (1140px) to prevent artificial desktop margins.
+- **Vertical Rhythm**: Paragraphs must maintain consistent bottom spacing (`p { margin-bottom: 1.5rem; line-height: 1.75; }`) to ensure readability across all views.
 - **Mobile Spacing**: All headers, banners, and layout containers must maintain at least `20px` horizontal padding on viewports `< 768px`. Never allow text to touch screen glass.
 - **System Typography**: Body text must use the system stack: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;`. Monospace code must use `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;`. Do not add unimported web fonts.
 - **Single `<h1>` Landmark**: Every page must contain exactly one `<h1>`. Standardize on `<div class="section-title"><h1>...</h1></div>`. Never declare secondary `<h1>` elements in markdown content.
