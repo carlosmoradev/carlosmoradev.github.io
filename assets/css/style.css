@@ -97,7 +97,7 @@ body {
 }
 
 .hero {
-  text-align: center;
+  text-align: left;
   padding: 60px 0;
 }
 
@@ -124,15 +124,15 @@ body {
 .hero-description {
   font-size: 1.1rem;
   color: var(--text-color);
-  max-width: 680px;
-  margin: 0 auto 40px;
+  max-width: 720px;
+  margin: 0 0 35px;
   line-height: 1.8;
 }
 
 .hero-cta {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 10px;
 }
