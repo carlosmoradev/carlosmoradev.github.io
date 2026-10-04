@@ -5,7 +5,9 @@ permalink: /about/
 description: "Platform Architect with 25+ years of experience across multi-cloud environments. Defining platform standards, data platform governance, IAM automation, and compliance guardrails on AWS and GCP."
 ---
 
-# About Me
+<div class="section-title">
+  <h1>About Me</h1>
+</div>
 
 I am Carlos Mora, a Platform Architect with 25+ years of experience spanning on-premise data centers, hybrid architectures, and multi-cloud platforms. I define platform standards, build deterministic guardrails, and govern data platforms and security in regulated enterprise environments.
 

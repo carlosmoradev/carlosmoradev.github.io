@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -552,9 +552,17 @@ body {
 /* Project/Post Content Pages */
 .project-header, .post-header {
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 60px 20px 40px;
   background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
   margin: -40px -15px 40px;
+}
+
+.post-content,
+.project-content,
+.page-content {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-title, .post-title {
@@ -594,7 +602,7 @@ code {
   background-color: var(--bg-light);
   padding: 3px 8px;
   border-radius: 4px;
-  font-family: 'Monaco', 'Courier New', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.9em;
   color: var(--primary-color);
   border: 1px solid var(--border-color);
